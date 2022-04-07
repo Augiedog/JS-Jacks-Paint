@@ -1,10 +1,11 @@
 function configureListeners() {
-    // select img elements
+    // select img elements  | why will document.querySelectorAll('img') not work here?    
     let images = document.getElementsByTagName('img')
 
      for (var i = 0; i < images.length; i++) {        
         // iterate over images and add mouseover event listeners
-        document.getElementById(images[i].id).addEventListener('mouseover')
+        document.getElementById(images[i].id).addEventListener('mouseover', addOpacity)
+        document.getElementById(images[i].id).addEventListener('mouseout', removeOpacity)
     } 
 }
 
@@ -31,42 +32,63 @@ function getProductInfo(paintColor) {
     
     switch (paintColor) {
         case 'pn1':           
-            // set variables for price and color name and invoke a function to update the price     
+                price =  '$14.99'
+                colorName = 'Lime Green'
+                updatePrice(colorName, price)
             break;           
         case 'pn2':
-            // set variables for price and color name and invoke a function to update the price    
+                price = '$11.14'
+                colorName = 'Medium Brown'  
+                updatePrice(colorName,price)  
             break;            
         case 'pn3':
-            // set variables for price and color name and invoke a function to update the price  
+                price = '$22.99'
+                colorName = 'Royal Blue'
+                updatePrice(colorName, price) 
             break;   
         case 'pn4':
-            // set variables for price and color name and invoke a function to update the price  
+            price = '$22.99'
+                colorName = 'Royal Blue'
+                updatePrice(colorName, price)  
             break;   
         case 'pn5':
-            // set variables for price and color name and invoke a function to update the price       
+            price = '$22.99'
+                colorName = 'Royal Blue'
+                updatePrice(colorName, price)       
             break;   
         case 'pn6':
-            // set variables for price and color name and invoke a function to update the price        
+            price = '$22.99'
+                colorName = 'Royal Blue'
+                updatePrice(colorName, price)        
             break;   
         case 'pn7':
-            // set variables for price and color name and invoke a function to update the price 
+            price = '$22.99'
+                colorName = 'Royal Blue'
+                updatePrice(colorName, price) 
             break;   
         case 'pn8':
-            // set variables for price and color name and invoke a function to update the price   
+            price = '$22.99'
+                colorName = 'Royal Blue'
+                updatePrice(colorName, price)   
             break;   
         case 'pn9':
-            // set variables for price and color name and invoke a function to update the price 
+            price = '$22.99'
+                colorName = 'Royal Blue'
+                updatePrice(colorName, price) 
             break;   
           default:              
     }
 
-    function updatePrice(colorName, price)
-    {       
-        let colorPrice = // select element with corresponding id
+    function updatePrice(colorName, price) {       
+        // select element with corresponding id
         // display price
+        let colorPrice = document.getElementById('color-price');
+        colorPrice.textContent = price;
         
-        let color = // select element with corresponding id
+        // select element with corresponding id
         //display color name
+        let color = document.getElementById('color-name');
+        color.textContent = colorName;
     }
     
 }
