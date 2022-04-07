@@ -11,6 +11,7 @@ function configureListeners() {
 
 function addOpacity(event) {
     // add appropriate CSS class
+    
     getProductInfo(event.target.id);     
 }
 
@@ -32,7 +33,7 @@ function getProductInfo(paintColor) {
     
     switch (paintColor) {
         case 'pn1':           
-                price =  '$14.99'
+                price = '$14.99'
                 colorName = 'Lime Green'
                 updatePrice(colorName, price)
             break;           
@@ -47,33 +48,33 @@ function getProductInfo(paintColor) {
                 updatePrice(colorName, price) 
             break;   
         case 'pn4':
-            price = '$22.99'
-                colorName = 'Royal Blue'
+                price = '$13.42'
+                colorName = 'Solid Red'
                 updatePrice(colorName, price)  
             break;   
         case 'pn5':
-            price = '$22.99'
-                colorName = 'Royal Blue'
+                price = '$21.98'
+                colorName = 'Solid White'
                 updatePrice(colorName, price)       
             break;   
         case 'pn6':
-            price = '$22.99'
-                colorName = 'Royal Blue'
+                price = '$4.99'
+                colorName = 'Solid Black'
                 updatePrice(colorName, price)        
             break;   
         case 'pn7':
-            price = '$22.99'
-                colorName = 'Royal Blue'
+            price = '$8.22'
+                colorName = 'Solid Cyan'
                 updatePrice(colorName, price) 
             break;   
         case 'pn8':
-            price = '$22.99'
-                colorName = 'Royal Blue'
+            price = '$11.99'
+                colorName = 'Solid Purple'
                 updatePrice(colorName, price)   
             break;   
         case 'pn9':
-            price = '$22.99'
-                colorName = 'Royal Blue'
+            price = '$14.99'
+                colorName = 'Solid Yellow'
                 updatePrice(colorName, price) 
             break;   
           default:              

@@ -1,6 +1,7 @@
 body{
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
  }
+ /* use this style in a function */
  .dim{
     opacity: 0.1555;
   }
